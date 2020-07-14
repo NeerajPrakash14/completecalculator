@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_standard"
+            android:icon="@drawable/ic_standard_calc"
+            android:title="Standard Calculator" />
+
+        <item
+            android:id="@+id/nav_scientific"
+            android:icon="@drawable/ic_scientific_calc"
+            android:title="Scientific Calculator" />
+
+        <item
+            android:id="@+id/nav_converter"
+            android:icon="@drawable/ic_convert"
+            android:title="Unit Converter" />
+
+        <item
+            android:id="@+id/nav_matrix"
+            android:icon="@drawable/ic_matrix"
+            android:title="Matrix" />
+
+
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_invite"
+                android:icon="@drawable/ic_share"
+                android:title="Invite others"></item>
+
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback_black_24dp"
+                android:title="Feedback"></item>
+
+            <item
+                android:id="@+id/nav_Rate"
+                android:icon="@drawable/ic_rate_review"
+                android:title="Rate us"></item>
+
+        </menu>
+    </item>
+</menu>

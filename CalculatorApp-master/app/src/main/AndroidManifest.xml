@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.name.neeraj.urcalculator">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+     <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+ -->
+
+    <application
+
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_appicon_final"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Converter_MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".StandardCal"
+            android:label="@string/title_activity_standard_cal"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter android:label="Complete calculator">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ScientificCal"
+            android:label="@string/title_activity_scientific_cal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnitArea"
+            android:label="@string/title_activity_unit_area"
+            android:noHistory="true"
+            android:parentActivityName=".Converter_MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".UnitLength"
+            android:label="@string/title_activity_unit_length"
+            android:noHistory="true"
+            android:parentActivityName=".Converter_MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnitWeight"
+            android:label="@string/title_activity_unit_weight"
+            android:noHistory="true"
+            android:parentActivityName=".Converter_MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnitTemperature"
+            android:label="@string/title_activity_unit_temperature"
+            android:noHistory="true"
+            android:parentActivityName=".Converter_MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".History"
+            android:label="@string/title_activity_history"
+            android:noHistory="true"
+            android:parentActivityName=".StandardCal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Matrixcalculator_main"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".final_result"
+            android:noHistory="true"
+            android:parentActivityName=".Matrixcalculator_main" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2007637783238354~1022629094" />
+
+        <!--<meta-data android:name="com.google.android.gms.version"
+
+            android:value="@integer/google_play_services_version" />
+-->
+    </application>
+
+</manifest>
